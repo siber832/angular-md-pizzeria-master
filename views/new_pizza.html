@@ -1,0 +1,22 @@
+<div id="new_pizza" layout="row" layout-padding>
+    <div flex="30" flex-offset="35">
+        <h2>Nueva Pizza</h2>
+        <form name="loginForm" ng-submit="submit()">
+            <div layout="column">
+                <md-input-container>
+                    <label>Nombre</label>
+                    <input name="user" ng-model="user" required>
+                    <div ng-messages="login.username.$error">
+                        <div ng-message="required">This is required!</div>
+                    </div>
+                </md-input-container>
+
+                <input type="file" id="trigger" onchange="angular.element(this).scope().setFile(this)" accept="image/*">
+                <img height="{{hei}}" width="{{wei}}" ng-src="{{image_source}}">
+                <md-button class="md-raised md-primary" type="submit" id="submit">
+                    Guardar
+                </md-button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+
+    .logo {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .content-header {
+        width: 100%;
+        padding: 20px 50px;
+
+        background: url('../img/pizza_cheese_vegetables_meat_70134_3840x1200.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        color: #ffffff;
+    }
+
+    /* Important to set height for column layout */
+    .boxWithHeight {
+        box-sizing: border-box;
+        height: 100%;
+    }
